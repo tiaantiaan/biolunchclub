@@ -7,11 +7,11 @@ class NextLunch:
 		self.adj=0;
 		'Set week number of year'
 		self.weeknum = date.today().isocalendar()[1]
-		'Set names (Repeat to add 2 week shift for Mariaan)'
-		self.names = ['Tiaan','Larry','Pietie','Stephen','Pieter']
+		'Set names (Repeat to add 2 week shift for Marianne)'
+		self.names = ['Tiaan','Larry','Piti','Stephen','Pieter']
 		'Add Mariaan every 6th week'
 		if ( (self.weeknum+5) % (6+self.adj) == 0) or ( (self.weeknum+5) % (7+self.adj) == 0) or ( (self.weeknum+5) % (8+self.adj) == 0) or ( (self.weeknum+5) % (9+self.adj) == 0) or ( (self.weeknum+5) % (10+self.adj) == 0) or ( (self.weeknum+5) % (11+self.adj) == 0) :
-			self.names.append('Mariaan')
+			self.names.append('Marianne')
 		'Set people count'
 		self.names_count = 6
 		'Adjust week number to sync current schedule'
